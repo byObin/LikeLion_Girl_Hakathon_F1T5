@@ -1,0 +1,309 @@
+#guide {
+    display: none;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  .mainname {
+    width: 159px;
+    height: 48px;
+    left: 682px;
+    top: 26px;
+  
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+  
+    letter-spacing: -0.01em;
+  
+    color: #1a1a1a;
+    text-align: center;
+  }
+  
+  .menubar {
+    width: 1440px;
+    height: 45px;
+    left: 0px;
+    top: 100px;
+  
+    background: #f9de9a;
+    text-align: center;
+  }
+  
+  .a {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .b {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .c {
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .d {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .e {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .mainbox {
+    width: 1440px;
+    height: 480px;
+    left: 0px;
+    top: 142px;
+  
+    background: #b85b5b;
+  }
+  
+  .startBtn {
+    width: 219px;
+    height: 43px;
+    margin-left: 610px;
+    margin-top: 411px;
+    border-radius: 10px;
+    border-color: #eaeaea;
+    background-color: #eaeaea;
+  }
+  
+  
+  /* 공개프로젝트 */
+  .public{
+    /*lightgray*/
+    position:relative;
+    width: 1146px;
+    height: 1019px;
+    left: 147px;
+    
+    background-color: white;
+  }
+  
+  
+  .public_name{
+    font-size: 40px;
+    margin-top: 101px;
+  }
+  
+  .btn_more{
+    text-decoration: none;
+    font-size: 22px;
+    padding-top: 20px;
+    float: right;
+    color:#666666;
+    background-color: white;
+    border: 0px;
+  }
+  
+  .tab{
+    width: 94px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 38px;
+    /*버튼 폰트 추가해야됨*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+  
+    
+  }
+  
+  
+  
+  
+  .public .public_container4{
+  
+    /*lightgreen*/
+    height: 851px;
+    margin-top: 30px;
+    background-color: white;
+  
+  }
+  
+  
+  .public .public_content{
+    
+    width: 555px;
+    height: 396px;
+    margin-right: 30px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  
+  .public .public_content2{
+    
+    width: 555px;
+    height: 396px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  
+  .public .public_content3{
+    
+    width: 555px;
+    height: 396px;
+    margin-right: 30px;
+    margin-top: 59px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  .public .public_content4{
+    
+    width: 555px;
+    height: 396px;
+    
+    margin-top: 59px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  .public_img{
+    
+    
+    height: 295px;
+    background-color: #D9D9D9;
+  }
+  .public_title{
+    
+    height: 70px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.035em;
+  
+  color: #000000;
+  }
+  
+  /* 비공개프로젝트 */
+  .secret{
+    /*lightgray*/
+    position:relative;
+    width: 1146px;
+    height: 1019px;
+    left: 147px;
+    
+    background-color: white;
+  }
+  
+  
+  .secret_name{
+    font-size: 40px;
+    margin-top: 101px;
+  }
+  
+  
+  .secret .secret_container4{
+  
+    /*lightgreen*/
+    height: 851px;
+    margin-top: 30px;
+    background-color: white;
+  
+  }
+  
+  
+  .secret .secret_content{
+    
+    width: 555px;
+    height: 396px;
+    margin-right: 30px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  
+  .secret .secret_content2{
+    
+    width: 555px;
+    height: 396px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  
+  .secret .secret_content3{
+    
+    width: 555px;
+    height: 396px;
+    margin-right: 30px;
+    margin-top: 59px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  .secret .secret_content4{
+    
+    width: 555px;
+    height: 396px;
+    
+    margin-top: 59px;
+    float:left;
+    background-color: white;
+  
+    
+  }
+  .secret_img{
+    
+    
+    height: 295px;
+    background-color: pink;
+  }
+  .secret_title{
+    
+    height: 70px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -0.035em;
+  
+  color: #000000;
+  }
+  
+  
+  
+  
+  
+  footer{
+    /* Footer */
+  position: absolute;
+  width: 1440px;
+  height: 300px;
+  left: 0px;
+  top: 2834px; 
+  margin-top: 210px;
+  background: #F6F6F6;
+  
+  }
