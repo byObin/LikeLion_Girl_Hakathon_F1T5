@@ -1,0 +1,21 @@
+<h1>제목</h1>
+{{ develop_detail.title }}
+
+<h2>날짜</h2>
+{{ develop_detail.date }}
+
+<h3>본문</h3>
+{{ develop_detail.body }}
+
+<h3>좋아요</h3>
+{{ develop_detail.like_count }}
+
+<h3>사진</h3>
+{% if develop_detail.photo %}
+    <!--사진 찍어주기-->
+    {{ develop_detail.photo.url }}
+    <img src="{{ develop_detail.photo.url }}" alt="" height="200">
+{% endif %}
+
+
+<hr> 
