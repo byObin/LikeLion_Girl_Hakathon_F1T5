@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import DevelopModelForm
+from .forms import DevelopModelForm, BriefModelForm, QnAModelForm
 from .models import Develop, QnA
 from .models import Brief
 from django.shortcuts import render, redirect, get_object_or_404
@@ -34,6 +34,17 @@ def brief_detail(request, brief_id):
     # develop_id 번째 블로그 글을 detail.html로 띄우는 코드
     return render(request, 'brief_detail.html', {'brief_detail' : brief_detail})
 
+def brief_formcreate(request):
+    if request.method == 'POST':
+        # 입력 내용을 DB에 저장
+        form = BriefModelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('brief_home')
+    else:
+        # 입력을 받을 수 있는 html 갖다주기
+        form = BriefModelForm()
+    return render(request, 'brief_form_create.html', {'form' :form})
 
 def modelformcreate(request):
     if request.method == 'POST':
@@ -61,6 +72,18 @@ def qna_detail(request, qna_id):
 
     # qna_id 번째 블로그 글을 detail.html로 띄우는 코드
     return render(request, 'qna_detail.html', {'qna_detail' : qna_detail})
+
+def qnaformcreate(request):
+    if request.method == 'POST':
+        # 입력 내용을 DB에 저장
+        form = QnAModelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('qna')
+    else:
+        # 입력을 받을 수 있는 html 갖다주기
+        form = QnAModelForm()
+    return render(request, 'qna_form_create.html', {'form' :form})
 
 def checkpw(request):
     return render(request, 'password.html')
