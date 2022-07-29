@@ -11,10 +11,12 @@ urlpatterns = [
 
     path('brief/', views.brief_home, name='brief_home'),
     path('brief_detail/<int:brief_id>', views.brief_detail, name='brief_detail'), 
+    path('briefcreate/', views.brief_formcreate, name='brief_formcreate'),
     path('checkpw/',views.checkpw, name='checkpw'),
     path('modelformcreate/', views.modelformcreate, name='modelformcreate'), # 새로운 아이디어 추가
     path('qna/', views.qna, name='qna'),
-    path('qna/<int:qna_id>', views.qna_detail, name='qna_detail'),   
+    path('qna/<int:qna_id>', views.qna_detail, name='qna_detail'),  
+    path('qnaformcreate/', views.qnaformcreate, name='qnaformcreate'), 
 ]
 # media 파일에 접근할 수 있는 url도 추가해주어야 함.
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
