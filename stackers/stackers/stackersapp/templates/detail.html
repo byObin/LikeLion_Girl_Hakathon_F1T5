@@ -16,18 +16,3 @@
 
 <hr> 
 
-<h3>댓글</h3>
-<form method="POST" action="{% url 'create_comment' blog_detail.id %}">
-    {% csrf_token %}
-    {{ comment_form }}
-    <input type="submit">
-</form>
-
-<hr> 
-
-<!--댓글 목록-->
-{% for comment in blog_detail.comment_set.all %}
-<p>{{ comment }}</p>
-<hr>
-{% endfor %}
-
