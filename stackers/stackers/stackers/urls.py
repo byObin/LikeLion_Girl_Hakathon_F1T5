@@ -11,7 +11,7 @@ urlpatterns = [
 
     path('brief/', views.brief_home, name='brief_home'),
     path('brief_detail/<int:brief_id>', views.brief_detail, name='brief_detail'), 
-
+    path('checkpw/',views.checkpw, name='checkpw'),
     path('modelformcreate/', views.modelformcreate, name='modelformcreate'), # 새로운 아이디어 추가
     path('qna/', views.qna, name='qna'),
     path('qna/<int:qna_id>', views.qna_detail, name='qna_detail'),   

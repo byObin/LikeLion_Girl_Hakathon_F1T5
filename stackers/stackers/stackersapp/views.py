@@ -61,3 +61,6 @@ def qna_detail(request, qna_id):
 
     # qna_id 번째 블로그 글을 detail.html로 띄우는 코드
     return render(request, 'qna_detail.html', {'qna_detail' : qna_detail})
+
+def checkpw(request):
+    return render(request, 'password.html')
