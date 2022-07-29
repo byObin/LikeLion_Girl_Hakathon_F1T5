@@ -1,18 +1,22 @@
 <h1>제목</h1>
-{{ blog_detail.title }}
+{{ develop_detail.title }}
 
 <h2>날짜</h2>
-{{ blog_detail.date }}
+{{ develop_detail.date }}
 
 <h3>본문</h3>
-{{ blog_detail.body }}
+{{ develop_detail.body }}
+
+<h3>좋아요</h3>
+{{ develop_detail.like_count }}
 
 <h3>사진</h3>
-{% if blog_detail.photo %}
+{% if develop_detail.photo %}
     <!--사진 찍어주기-->
-    {{ blog_detail.photo.url }}
-    <img src="{{ blog_detail.photo.url }}" alt="" height="200">
+    {{ develop_detail.photo.url }}
+    <img src="{{ develop_detail.photo.url }}" alt="" height="200">
 {% endif %}
+
 
 <hr> 
 
